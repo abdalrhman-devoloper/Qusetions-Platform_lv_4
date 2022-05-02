@@ -1,0 +1,257 @@
+/* ========= Import || Font ||  ========= */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+/* ========= Import || Font ||  ========= */
+
+
+
+
+/* ========= Set || Variables ||  ========= */
+:root {
+    --mainColor: #192a56;
+    --primaryColor: #273c75;
+    --lightColor: #00a8ff;
+    --greenColor: #e1b12c;
+    --redColor: #487eb0;
+    --mainFont: 'Oswald', sans-serif;
+    --mainPadding: 40px;
+    --primaryPadding: 20px;
+    --mainFontSize: 1.2rem;
+    --primaryFontSize: .7rem;
+    --mainFontWigth: 500;
+    --primaryFontWigth: 700;
+}
+
+/* ========= Set || Variables ||  ========= */
+
+
+
+
+/* ========= Golbal || Styles ||  ========= */
+*>*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all .5s ease-in-out;
+    user-select: none;
+    user-zoom: none;
+    -webkit-user-drag: none;
+}
+
+body {
+    background-color: var(--mainColor);
+    font-family: var(--mainFont);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    height: 50%;
+}
+
+.border {
+    border: 2px solid var(--lightColor);
+    border-radius: 10px;
+}
+
+.hover:hover {
+    background-color: var(--lightColor) !important;
+    color: var(--primaryColor) !important;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--greenColor);
+    border-radius: 10px;
+}
+
+/* ========= Golbal || Styles ||  ========= */
+
+
+
+/* ========= Main || ElE || Styles ||  ========= */
+body>section {
+    display: flex;
+    height: 100vh;
+    padding: 30px;
+}
+
+body>section .container_1 {
+    width: 70%;
+    height: 100%;
+}
+
+body>section .container_2 {
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+/* ========= Main || ElE || Styles ||  ========= */
+
+/* ========= Audio || Styles ||  ========= */
+
+body>section>.audio_cotroll {
+    position: relative;
+}
+
+body>section>.audio_cotroll img {
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+body>section>.audio_cotroll .active {
+    opacity: 1;
+    z-index: 100;
+    width: auto;
+    height: auto;
+}
+
+/* ========= Audio || Styles ||  ========= */
+
+
+/* ========= Container || One || Styles ||  ========= */
+body>section .container_1 .start_btn {
+    height: 35%;
+}
+
+body>section .container_1 .start_btn button {
+    padding: var(--primaryPadding);
+    width: 200px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    font-size: var(--mainFontSize);
+    background-color: var(--primaryColor);
+    color: var(--lightColor);
+    cursor: pointer;
+    font-weight: var(--mainFontWigth);
+}
+
+body>section .container_1 .quest_content {
+    height: 65%;
+    padding: var(--mainPadding) var(--primaryPadding);
+}
+
+body>section .container_1 .quest_content .quset_cont {
+    position: relative;
+    height: 50%;
+    font-size: var(--mainFontSize);
+    color: var(--lightColor);
+    background-color: transparent;
+    padding: 90px;
+}
+
+body>section .container_1 .quest_index {
+    padding: 2px 10px;
+    font-size: 16px;
+    color: var(--lightColor);
+}
+
+body>section .container_1 .quest_content .answers {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+body>section .container_1 .quest_content .answers span {
+    width: 46%;
+    margin: 5px;
+    min-height: 40px;
+    text-align: center;
+    padding: 5px 0;
+    cursor: pointer;
+    color: var(--lightColor);
+}
+
+
+/* ========= Container || One || Styles ||  ========= */
+
+
+
+
+/* ========= Container || Two || Styles ||  ========= */
+body>section .container_2 .quest_index_num {
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    min-height: 68%;
+    max-height: 68%;
+    padding-bottom: 400px;
+    margin-bottom: 30px;
+    overflow: auto;
+}
+
+
+body>section .container_2 .quest_index_num p {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: var(--primaryColor);
+}
+
+body>section .container_2 .quest_index_num .correct_answer {
+    background-color: transparent !important;
+    color: var(--greenColor) !important;
+}
+
+body>section .container_2 .quest_index_num .falsey_answer {
+    background-color: transparent !important;
+    color: var(--primaryColor) !important;
+}
+
+body>section .container_2 .icons_helper {
+    justify-content: space-evenly;
+    height: 20%;
+}
+
+body>section .container_2 .icons_helper .remove_2 {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    color: var(--lightColor);
+}
+
+body>section .container_2 .icons_helper .google {
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+}
+
+/* ========= Container || Two || Styles ||  ========= */
+
+/* ========= Actives || Class || Styles ||  ========= */
+.active_point_quest {
+    color: var(--lightColor) !important;
+    font-weight: var(--primaryFontWigth);
+    font-size: var(--mainFontSize);
+}
+
+.falsey_answer {
+    background-color: var(--redColor) !important;
+    color: var(--lightColor) !important;
+}
+
+.correct_answer {
+    background-color: var(--greenColor) !important;
+    color: var(--lightColor) !important;
+}
+
+.hidde_animate_btn {
+    transform: scale(0);
+}
+
+/* ========= Actives || Class || Styles ||  ========= */

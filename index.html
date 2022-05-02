@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- ======== Meta =========== -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Question || Platform</title>
+        <!-- ======== Links =========== -->
+        <link rel="stylesheet" href="./styles/index.css">
+        <!-- ======== Links =========== -->
+    </head>
+
+    <body>
+        <section>
+            <div class="audio_cotroll">
+                <audio src="./assets/1.mp3" class="audio" loop></audio>
+                <img src="./assets/play.svg" alt="">
+                <img src="./assets/stop.svg" class="active" alt="">
+            </div>
+
+            <div class="container_1">
+                <div class="start_btn flex">
+                    <button id="start_quest" class="hover">Start</button>
+                </div>
+                <span class="quest_index border"></span>
+                <div class="quest_content">
+                    <div class="quset_cont flex border"></div>
+                    <div class="box flex">
+                        <div class="answers flex">
+                            <span class="answer border hover" answer='a'></span>
+                            <span class="answer border hover" answer='b'></span>
+                            <span class="answer border hover" answer='c'></span>
+                            <span class="answer border hover" answer='d'></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_2">
+                <div class="quest_index_num border flex"></div>
+                <div class="icons_helper flex">
+                    <div class="remove_2 border flex hover">0.5</div>
+                    <div class="google border hover flex"><img src="./assets/Google.svg" alt="" width="60px"></div>
+                </div>
+            </div>
+        </section>
+        <script src="./script/index.js"></script>
+    </body>
+
+</html>
