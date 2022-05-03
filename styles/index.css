@@ -16,7 +16,7 @@
     --mainPadding: 40px;
     --primaryPadding: 20px;
     --mainFontSize: 1.2rem;
-    --primaryFontSize: .7rem;
+    --primaryFontSize: .72rem;
     --mainFontWigth: 500;
     --primaryFontWigth: 700;
 }
@@ -64,6 +64,11 @@ body {
     color: var(--primaryColor) !important;
 }
 
+.hover_min_width:active {
+    background-color: var(--lightColor) !important;
+    color: var(--primaryColor) !important;
+}
+
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -95,6 +100,9 @@ body>section .container_2 {
     overflow: hidden;
 }
 
+body>section .container_1 .start_btn {
+    height: 35%;
+}
 
 /* ========= Main || ElE || Styles ||  ========= */
 
@@ -125,10 +133,6 @@ body>section>.audio_cotroll .active {
 
 
 /* ========= Container || One || Styles ||  ========= */
-body>section .container_1 .start_btn {
-    height: 35%;
-}
-
 body>section .container_1 .start_btn button {
     padding: var(--primaryPadding);
     width: 200px;

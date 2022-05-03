@@ -1,0 +1,65 @@
+/* ===========  Tablets || Sizes  =============== */
+/* =============== Sm ================ */
+@media screen and (min-width:360px) and (max-width:960px) {
+    :root {
+        --mainPadding: 20px;
+        --primaryPadding: 10px;
+        --mainFontSize: 1rem;
+        --mainFontWigth: 400;
+        --primaryFontWigth: 500;
+    }
+
+    body>section {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    body>section .container_1 {
+        width: 100%;
+        height: 70%;
+
+    }
+
+    body>section .container_1 .start_btn {
+        height: 20%;
+    }
+
+    body>section .container_2 {
+        width: 100%;
+        height: 30%;
+    }
+
+    body>section .container_2 .quest_index_num {
+        min-height: 58%;
+        max-height: 58%;
+        padding-bottom: 0;
+        padding-left: 400px;
+    }
+
+    body>section .container_2 .icons_helper {
+        justify-content: space-between;
+    }
+
+    body>section .container_1 .quest_content .quset_cont {
+        padding: 40px;
+    }
+
+    body>section .container_1 .quest_content .answers span {
+        font-size: var(--primaryFontSize);
+        font-weight: var(--primaryFontWigth);
+    }
+
+    body>section .container_2 .icons_helper .remove_2 {
+        width: 60px;
+        height: 60px;
+    }
+
+    body>section .container_2 .icons_helper .google {
+        width: 60px;
+        height: 60px;
+    }
+
+}
+
+/* =============== Sm ================ */
+/* ===========  Tablets || Sizes  =============== */

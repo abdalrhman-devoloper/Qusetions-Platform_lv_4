@@ -253,13 +253,12 @@ function start_app(e) {
     //======= Searcher || Event =======>
 
     //===== Simple || Animate ========>
-    quest_index_num.style.paddingBottom = '0';
+    quest_index_num.style.padding = '0';
 }
 //======= Start || Quiz || App =======>
 
 
 //======= Audio || Controller || App =======>
-
 audio_cotroll_img.forEach(ele => {
     ele.addEventListener('click', () => {
         if (audio.paused) {
@@ -275,4 +274,25 @@ audio_cotroll_img.forEach(ele => {
         }
     })
 })
-    //======= Audio || Controller || App =======>
+//======= Audio || Controller || App =======>
+
+
+//========= Handel  || Hover  || Effect  || in  || Small  || Deveices ||  ============>
+window.addEventListener('resize', () => {
+    if (window.innerWidth < 961) {
+        const hover = document.querySelectorAll('.hover');
+        hover.forEach(ele => {
+            ele.classList.add('hover_2');
+            ele.classList.remove('hover');
+        })
+        console.warn('resized to small delet hover');
+    } else {
+        const hover_2 = document.querySelectorAll('.hover_2');
+        hover_2.forEach(ele => {
+            ele.classList.add('hover')
+            ele.classList.remove('hover_2');
+        })
+        console.warn('resized to Big add hover');
+    }
+})
+//========= Handel  || Hover  || Effect  || in  || Small  || Deveices ||  ============>
