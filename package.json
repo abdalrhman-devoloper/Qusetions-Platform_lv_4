@@ -1,0 +1,22 @@
+{
+  "name": "qusetions-platform_lv_4",
+  "version": "1.0.0",
+  "description": "<h1>QUESTION PLATFORM</h1>\r <p> This app made for make amazing user experience in answer of questions </p>\r <p> Note: I didn't use any framework at this project i made it with native code</p>\r <h2>Features</h2>\r <ul>\r     <li>Clean Code</li>\r     <li>Using E6</li>\r     <li>Using OPP in the rate of 97%</li>\r     <li>Using json</li>\r     <li>Using audio</li>\r </ul>\r <h3>1.0.0v</h3>\r <p>########################################</p>\r <h1> QUESTION PLATFORM {UPDATE} </h1>\r <h3>What is the new ? </h3>\r <p> Surprise i made it responsive at all deveices </p>\r <p> Note: I did it with only css no bootstrap or any framwork</p>\r <h3>1.1.0v</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdalrhman8000/Qusetions-Platform_lv_4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abdalrhman8000/Qusetions-Platform_lv_4/issues"
+  },
+  "homepage": "https://github.com/Abdalrhman8000/Qusetions-Platform_lv_4#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.35"
+  }
+}
