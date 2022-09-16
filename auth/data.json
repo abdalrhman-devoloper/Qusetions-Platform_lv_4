@@ -2,7 +2,7 @@
     {
         "quest": "Inside which HTML element do we put the JavaScript?",
         "a": "<scripting>",
-        "b": "<js>",
+        "b": "<scriptlive>",
         "c": "<javascript>",
         "d": "<script>",
         "answer": "d"
